@@ -11,7 +11,7 @@ a{
 
 body{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #72544a;
@@ -104,8 +104,8 @@ body{
 }
 
 .description{
-    width: 550px;
-    font-size: 14px;
+    width: 350px;
+    font-size: 12px;
     font-weight:400;
 }
 
@@ -123,7 +123,7 @@ body{
 .group{
     width: 100%;
     height: 100%;
-    font-size: 148px;
+    font-size: 98px;
     font-weight: bolder;
 
     line-height: 150px;
