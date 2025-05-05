@@ -308,10 +308,7 @@ body{
     gap: 15px;
 }
 
-.subtext{
-    display: block;
-    text-align: justify;
-}
+
 
 .right{
     text-align: justify;
@@ -347,6 +344,42 @@ body{
     background-size: 200% 100%;
     
     animation: shimmer 3.5s infinite linear;
+}
+
+.completed{
+    animation: none;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.picture{
+    height: 50%;
+    width: 100%;
+}
+
+.remarks{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.statement{
+    
+}
+
+.more{
+    font-size: small;
+    color:#f0d7ccd0
 }
 
 .box2{
@@ -576,7 +609,7 @@ span.size-48 {
     border-radius: 30px;
     width: 100%;
     max-width: 1800px;
-    height: 700px;
+    height: 850px;
 }
 
 .hypo-sub{
@@ -869,4 +902,99 @@ span.size-48 {
 .ic:hover{
     color:#469161;
     transition: all 0.3s;
+}
+
+.subtext{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+
+    justify-content: center;
+
+    overflow: scroll;
+    width: 100%;
+
+    position: relative;
+}
+
+.half{
+    justify-content: left;
+}
+
+.slider{
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+}
+.slider *{
+    width: 100%;
+}
+
+#sliderTrack{
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slider{
+    width:100%;
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.slider-button {
+    all: unset;
+    position: absolute;
+    right: -0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.slider-button i {
+    color: rgba(255, 255, 255, 0.603);
+}
+.slider-button:hover i {
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.slider-shadow{
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-type: none; 
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}
+
+.slider-shadow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
+    pointer-events: none;
+  }
+
+.picture *{
+    height:100%;
+    width: 100%;
 }
