@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>Project | In Heat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />    <title>Project | In Heat</title>
 </head>
 <body>
     <div id="home" class="header">
@@ -41,7 +40,7 @@
             <div class="name">
                 <div class="proj">PROJECT</div>
                 <div class="group"><div class="white">IN</div><div class='white'>HEAT</div></div>
-                <div class="description"><div class="white">A <u>data science</u> project that aims to analyze relevant Philippine emissions, weather, and other environment data to uncover insights regarding the <u>Urban Heat Island</u> effect in the Philippines.</div></div>
+                <div class="description"><div class="white">A <u>data science</u> project that aims to analyze relevant Philippine emissions, weather, and other environment data to uncover insights regarding the <u>Urban Heat Island</u> effect in Metro Manila.</div></div>
             </div>
         </div>
     </div>
@@ -61,7 +60,7 @@
                             Urban areas in the Philippines are among the most vehicle-dense regions in the world. While this presents challenges in transportation and infrastructure, it also significantly impacts the country’s climate.
                         </div>
                         <div class="subtext white-bg">
-                            This study focuses on the Urban Heat Island (UHI) Effect, a phenomenon where urban areas experience higher temperatures than surrounding rural regions due to human activities, including vehicle emissions. The objective of this research is to analyze the correlation between CO₂ emissions from vehicles and the occurrence of Urban Heat Islands in major Philippine cities. By examining this relationship, we aim to provide insights into how transportation-related emissions contribute to urban warming and its potential long-term effects on climate and public health.
+                            This study focuses on the Urban Heat Island (UHI) Effect, a phenomenon where urban areas experience higher temperatures than surrounding rural regions due to human activities, including vehicle emissions. The objective of this research is to analyze the correlation between CO₂ emissions from vehicles and the intensification of Urban Heat Island Effect in Metro Manila. By examining this relationship, we aim to provide insights into how transportation-related emissions contribute to urban warming and its potential long-term effects on climate and public health.
                         </div>
                         <a href="https://education.nationalgeographic.org/resource/urban-heat-island/" class="b-w-bg"><i class="material-icons red">eco</i>Read more about UHI Effect</a>
                     </div>
@@ -72,7 +71,9 @@
                     <div class="subtitle">
                         <div class="red">Hypothesis</div>
                     </div>
-                    <div class="subtext white-bg hypo-sub">Greenhouse gas emissions from transportation is a huge factor in contributing to the intensification of the urban heat island effect.</div>
+                    <div class="subtext white-bg hypo-sub">Greenhouse gas emissions from transportation is positively correlated to the intensification of the Urban Heat Island Effect in Metro Manila.</div>
+                    <div class="subtext white-bg hypo-sub"> Alternative: Greenhouse gas emissions from transportation is negatively correlated to the intensification of the Urban Heat Island Effect in Metro Manila.</div>
+                    <div class="subtext white-bg hypo-sub">Null: Greenhouse gas emissions from transportation is not correlated to the intensification of the Urban Heat Island Effect in Metro Manila.</div>
                 </div>
                 
                 <div id="data"  class="body-holder2">
@@ -111,13 +112,39 @@
                         <div class="subtitle">
                             Data Exploration
                         </div>
-                        <div class="subtext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae mi scelerisque, ornare leo in, ultrices diam. Integer non ex dolor. Nulla ultricies, mauris non volutpat pharetra, mauris metus condimentum lacus, eget auctor diam justo et sapien. In auctor semper diam. Nunc ornare ligula in quam viverra ultrices. Suspendisse nec gravida nisl. Suspendisse tincidunt, sapien vitae posuere ultrices, nisi odio maximus risus, non interdum tortor felis a felis. 
+                        <div class="subtext half">
+                            Using the Jupyter Notebook, we cleaned, normalized, and plotted our data to spot trends and identify correlations in the dataset.
                         </div>
-                        <div class="subtext">
-                            Vivamus semper a mauris eget posuere. Mauris tempus, ipsum vitae semper blandit, nibh dui auctor neque, sed vehicula lorem libero id eros. Nunc vel lacinia ligula. Maecenas sit amet leo ex. Etiam mi massa, porttitor porta interdum sit amet, placerat id diam. Donec id nibh nec metus semper porttitor.
+                        <div id="new" class="subtext slider-shadow">
+                            <div id="sliderTrack">
+                                <div id="s1" class="slider">
+                                    <div class="slider-title">
+                                        Cleaning and Normalization
+                                    </div>
+                                    <div class="slider-content">
+                                        Used API and excel queries to filter excel data based on our needs and used normalization techniques to aggregate our data.
+                                    </div>
+                                </div>
+                                <div id="s2" class="slider">
+                                    <div class="slider-title">
+                                        Visualization
+                                    </div>
+                                    <div class="slider-content">
+                                        Using matplotlib, we plotted our cleaned dataset and uncovered relationships, identified their trends, and answered some important questions regarding our study.
+                                    </div>
+                                </div>
+                                <div id="s3" class="slider">
+                                    <div class="slider-title">
+                                        Hypothesis Testing
+                                    </div>
+                                    <div class="slider-content">
+                                        Using correlational analysis, we verified our hypothesis.
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="slider-button" id="nextBtn"><i class='material-icons'>arrow_forward_ios</i></button>
                         </div>
-                        <button class="b-b-bg"><i class="material-icons">eco</i>Explore More</button>
+                        <a href="https://colab.research.google.com/drive/1filTur-y4qWmZvnfn4TTc6jl8LuW4XRk?usp=sharing&fbclid=IwZXh0bgNhZW0CMTEAAR7Eog9bBPsVC9GlJLzt_0GdzyLwYbZog5PpI9VDRaCsRyFxllh6rmCuwOpYSg_aem_D83y_0AT7PMguG5ucYP7aA#scrollTo=m1biP7BW3xeh"><button class="b-b-bg"><i class="material-icons">eco</i>Explore More</button></a>
                     </div>
                 </div>
                 <div id="model" class="body-holder2">
@@ -133,9 +160,58 @@
                         Results
                     </div>
                     <div class="box-holder">
-                        <div class="box1">loading...</div>
-                        <div class="box1">loading...</div>
-                        <div class="box1">loading...</div>
+                        <div class="box1 completed">
+                            <div class="picture">
+                                <img src="r1.png">
+                            </div>
+                            <div class="remarks">
+                                <div class="statement">
+                                    There is a weak negative correlation between the CO2 Emission of vehicles and the intensification of the UHI effect in Metro Manila
+                                </div>
+                                <div class="more">
+                                    With a coefficient of -0.19, our hypothesis is rejected and we accept our alternative hypothesis. This shows that there are more factors other than CO2 emission of vehicles that contribute to the intensification of the UHI effect in Metro Manila.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box1 completed">
+                            <div class="picture">
+                                <img src="r2.png">
+                            </div>
+                            <div class="remarks">
+                                <div class="statement">
+                                    Metro Manila has a higher temperature than Rural Regions around it.
+                                </div>
+                                <div class="more">
+                                    Table shows daily aggragated temperature difference of Metro Manila and rural regions around it, implying that Metro Manila is 3.74 °C higher than rural regions on average.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box1 completed">
+                            <div class="picture">
+                                <img src="r3.png">
+                            </div>
+                            <div class="remarks">
+                                <div class="statement">
+                                    There is an increasing trend in the temperature difference of Metro Manila has and Rural Regions around it.
+                                </div>
+                                <div class="more">
+                                    Faint lines represent the actual monthly differences, while the solid lines are linear regression trends for each province, which showed that the apparent maximum temperature difference between Metro Manila and rural regions around it are increasing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box1 completed">
+                            <div class="picture">
+                                <img src="r4.png">
+                            </div>
+                            <div class="remarks">
+                                <div class="statement">
+                                    Soil Temperature in Metro Manila goes lower as CO2 Emission from vehicles increase.
+                                </div>
+                                <div class="more">
+                                    Table shows negative relationship between CO2 emission from vehicles and soil temperature in Metro Manila, which supports scientific research that emissions block the sunlight that cause increase in soil temperature.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="last" class="body-holder3">
@@ -192,5 +268,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
