@@ -6,13 +6,14 @@ let currentIndex = 0;
 
 const newer = document.getElementById('new');
 
-const width = getComputedStyle(newer).width;
+const width = parseFloat(getComputedStyle(newer).width);
+console.log(track.children);
 for(let i = 0; i < totalSlides; i++){
-    track.children[i].style.height = `${width}px`;
+    track.children[i].style.width = `${width}px`;
+    console.log(track.children[i].style.height);
 }
-
+track.style.transform = `translateX(-${-1 * width}px)`
 nextBtn.addEventListener('click', () => {
-    console.log('going in');
     currentIndex = (currentIndex + 1) % totalSlides;
-    track.style.transform = `translateX(-${currentIndex * 300}px)`;
+    track.style.transform = `translateX(-${currentIndex * width}px)`;
 });
