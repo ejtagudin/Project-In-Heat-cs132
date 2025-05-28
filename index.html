@@ -144,82 +144,115 @@
                             </div>
                             <button class="slider-button" id="nextBtn"><i class='material-icons'>arrow_forward_ios</i></button>
                         </div>
-                        <a href="https://colab.research.google.com/drive/1filTur-y4qWmZvnfn4TTc6jl8LuW4XRk?usp=sharing"><button class="b-b-bg"><i class="material-icons">eco</i>Explore More</button></a>
+                        <a href="https://colab.research.google.com/drive/1filTur-y4qWmZvnfn4TTc6jl8LuW4XRk?usp=sharing&fbclid=IwZXh0bgNhZW0CMTEAAR7Eog9bBPsVC9GlJLzt_0GdzyLwYbZog5PpI9VDRaCsRyFxllh6rmCuwOpYSg_aem_D83y_0AT7PMguG5ucYP7aA#scrollTo=m1biP7BW3xeh"><button class="b-b-bg"><i class="material-icons">eco</i>Explore More</button></a>
+                    </div>
+                </div>
+                <div id="model" class="body-holder4">
+                    <div class="subtitle x">Findings</div>
+                    <div class="findingx">
+                        What is Urban Heat Island (UHI) Intensity?
+                    </div>
+                    <img class="model" src="my_plot1.png">
+                    <div class="explain">
+                        <p>UHI intensity in Metro Manila is calculated by subtracting the weighted average of apparent maximum temperature of rural regions around Metro Manila, namely: Bulacan, Rizal, Cavite, Bataan, Pampanga, Laguna, to the apparent maximum temperature of Metro Manila.</p>
+
+                        <p>A region is given more weight if it is closer to Metro Manila by distance and by elevation.</p>
+
+                        <p>We can observe in this graph that the trend of UHI intensity tends to dip during midyear, which can be due to seasonal changes.
+
+                        <p>This can affect our analysis so what we did is we grouped the UHI dataset into two seasons, the Wet and the Dry season.</p>
+                    </div>
+                    <div class="findingx">
+                        A closer look in the CO2 Vehicle Emission Data and UHI Intensity during Wet and Dry seasons
+                    </div>
+                    <div class="explain">
+                        <p>After grouping the UHI dataset to two groups, we saw the following:</p>
+                    </div>
+                    <img class="model" src="my_plot2.png">
+                    <div class="explain">
+                        <p>- During the wet season, there is a positive correlation between the CO2 Vehicle Emissions and UHI Intensity.</p>
+                        <p>- On the other hand, UHI Intensity averaged at 2 to 3 degrees celsius during the Wet season.</p>
+                    </div>
+
+                    <img class="model" src="my_plot3.png">
+                    <div class="explain">
+                        <p>- During the dry season, the result is almost the same as the wet season. However, positive correlation was observed after a 2-month delay. In other words, CO2 Vehicle Emission today is positively correlated with UHI Intensity after two months. </p>
+                        <p>- On the other hand, UHI Intensity averaged at 5 to 6 degrees celsius during the Dry season.</p>
+                    </div>
+                    <div class="findingx">
+                        To take advantage of these findings, we created a model that would predict the UHI Intensity of Metro Manila at any given month based on the current season and CO2 Vehicle Emissions.
                     </div>
                 </div>
                 <div id="model" class="body-holder2">
-                    <div class="subtitle">The Model(s)</div>
+                    <div class="subtitle">The Model</div>
                     <div class="box-holder">
-                        <div class="box1">loading...</div>
-                        <div class="box1">loading...</div>
-                        <div class="box1">loading...</div>
-                    </div>
-                </div>
-                <div id="result" class="body-holder2">
-                    <div class="subtitle">
-                        Results
-                    </div>
-                    <div class="box-holder">
-                        <div class="box1 completed">
-                            <div class="picture">
-                                <img src="r1.png">
+                        <img class="model" src="my_plot.png">
+
+                        <div class="remarks">
+                            <div class="statement">
+                                Seasonal Regression Model
                             </div>
-                            <div class="remarks">
-                                <div class="statement">
-                                    There is a weak negative correlation between the CO2 Emission of vehicles and the intensification of the UHI effect in Metro Manila
-                                </div>
-                                <div class="more">
-                                    With a coefficient of -0.19, our hypothesis is rejected and we accept our alternative hypothesis. This shows that there are more factors other than CO2 emission of vehicles that contribute to the intensification of the UHI effect in Metro Manila.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box1 completed">
-                            <div class="picture">
-                                <img src="r2.png">
-                            </div>
-                            <div class="remarks">
-                                <div class="statement">
-                                    Metro Manila has a higher temperature than Rural Regions around it.
-                                </div>
-                                <div class="more">
-                                    Table shows daily aggragated temperature difference of Metro Manila and rural regions around it, implying that Metro Manila is 3.74 °C higher than rural regions on average.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box1 completed">
-                            <div class="picture">
-                                <img src="r3.png">
-                            </div>
-                            <div class="remarks">
-                                <div class="statement">
-                                    There is an increasing trend in the temperature difference of Metro Manila has and Rural Regions around it.
-                                </div>
-                                <div class="more">
-                                    Faint lines represent the actual monthly differences, while the solid lines are linear regression trends for each province, which showed that the apparent maximum temperature difference between Metro Manila and rural regions around it are increasing.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box1 completed">
-                            <div class="picture">
-                                <img src="r4.png">
-                            </div>
-                            <div class="remarks">
-                                <div class="statement">
-                                    Soil Temperature in Metro Manila goes lower as CO2 Emission from vehicles increase.
-                                </div>
-                                <div class="more">
-                                    Table shows negative relationship between CO2 emission from vehicles and soil temperature in Metro Manila, which supports scientific research that emissions block the sunlight that cause increase in soil temperature.
-                                </div>
+                            <div class="more more2">
+                                Our model predicts the UHI Intensity of Metro Manila based on CO2 Vehicle emissions and current season. To know more about this model, you may visit our complete documentation of EDA and ML Modelling <a class="lightup"href="EDA and ML.html">here</a>.
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="last" class="body-holder3">
                     <div class="subtitle">Conclusion</div>
-                    <div class="box-holder">
-                        <div class="box2">loading...</div>
-                        <div class="box2">loading...</div>
-                        <div class="box2">loading...</div>
+                    <div class="explain">
+                        
+
+<p>Even though the model formulated only has an 80% accuracy on the dataset given, there are still a lot of insights covered during the EDA and modelling.</p>
+<image class="model xy" src="r3.png"></image>
+                        <ul>
+                            
+                            <li>There is an increase in the temperature difference between Metro Manila and rural regions around it (UHI intensification) since 2015 (starting with 2 degrees celsius) to 2024 (ending with 6 degrees celsius).</li>
+                            <li>The magnitude of the temperature difference between Metro Manila and rural regions around it are significantly greater in the Dry season (ranging from 5 to 6 degrees celsius on average) than in the wet season (ranging from 2 to 3 degrees celsius on average). </li>
+                            <li>There is a positive correlation between the CO2 vehicle emissions and UHI intensification in Metro Manila during the Wet season (with a coefficient of 0.3). This shows that the increase in CO2 vehicle emissions will likely result to an increase in the UHI intensification in Metro Manila.</li>
+                            <li>There is a delayed (by 2 months) positive correlation between the CO2 vehicle emissions and UHI intensification in Metro Manila during the Dry season (with a coefficient of 0.3). This shows that the increase in CO2 vehicle emissions will likely result to an increase in the UHI intensification in Metro Manila 2 months later.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="last" class="body-holder3">
+                    <div class="subtitle">Call to Action</div>
+                    <div class="explain">
+                        <p>As citizens of the Philippines, and especially as citizens of Metro Manila, this project shows that the temperature rise in our region compared to other regions is not purely coincidental, the result of this project exemplifies that. The scope of this study is limited only to CO2 emissions from vehicle transportation and majority of our transportation emits CO2, which causes temperature rise in Metro Manila. In reality, there are a lot more underlying factors that cause UHI intensification in Metro Manila. In the end, it is the job of students and researchers to reveal these underlying factors but it is the job of the general public to take action and contribute to the betterment of our climate.</p>
+                    </div>
+                    <div class="findingx">
+                        What can you do?
+                    </div>
+                    <div class="explain">
+                        <p>Based on this project, we citizens of Metro Manila should do the following when travelling:</p>
+
+                        <p>Short Trips? Walk or Bike!</p>
+                        <ul>
+                            <li>For nearby destinations, choose walking or cycling instead of driving.</li>
+                            <li>It’s healthier for you and produces zero CO₂ emissions.</li>
+                        </ul>
+
+                        <p>Medium Distances? Try an E-Bike!</p>
+                        <ul>
+                            <li>If you regularly travel mid-range distances, consider investing in an electric bike.</li>
+                            <li>E-bikes are efficient, eco-friendly, and keep you active without the sweat.</li>
+                        </ul>
+
+                        <p>Buying a Vehicle? Go Electric! </p>
+                        <ul>
+                            <li>If you’re in the market for a new car, opt for an electric vehicle (EV).</li>
+                            <li>EVs reduce CO₂ emissions and lower your carbon footprint significantly.</li>
+                        </ul>
+
+                        <p>Other things we can do outside the scope of this project:</p>
+
+                        <p>Reduce Energy Use </p>
+                        <ul>
+                            <li>Turn off lights, unplug devices, and switch to energy-efficient appliances to lower CO₂ emissions.</li>
+                        </ul>
+                        <p>Go Green</p>
+                        <ul>
+                            <li>Plant trees and recycle waste to absorb carbon and reduce environmental harm.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
