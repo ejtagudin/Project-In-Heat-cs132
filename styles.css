@@ -998,3 +998,50 @@ span.size-48 {
     height:100%;
     width: 100%;
 }
+
+.lightup{
+    font-weight: bold;
+    font-style: italic;
+
+    cursor: pointer;
+}
+
+.model{
+    width: 100%;
+    height: 100%;
+}
+
+.more2{
+    text-align: center;
+}
+
+.body-holder4{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.findingx{
+    text-align: center;
+    font-weight: bold;
+}
+
+.explain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: justify;
+}
+
+.x{
+    margin-bottom: 50px;
+}
+
+.xy{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
